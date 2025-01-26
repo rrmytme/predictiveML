@@ -1,3 +1,5 @@
+# Version: 1.0
+
 from fin_ai_assistant import BotAssistant
 import matplotlib.pyplot as plt
 import seaborn as sns

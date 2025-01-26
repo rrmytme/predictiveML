@@ -1,3 +1,5 @@
+# Version: 1.0
+
 # Description: This file contains the necessary imports for the fin_ai_assistant.py file.
 
 # os is used to interact with the operating system
