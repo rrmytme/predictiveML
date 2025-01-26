@@ -1,4 +1,4 @@
-# FinAI Assistant[DRAFT VERSION]
+# FinAI Assistant[DRAFT VERSION..]
 
 FinAI Assistant is a chatbot designed to assist with financial tasks such as retrieving stock prices, managing portfolios, and plotting stock charts. The assistant uses machine learning to understand user intents and provide appropriate responses.
 
