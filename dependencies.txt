@@ -2,5 +2,5 @@ numpy
 matplotlib
 tensorflow
 nltk
-mplfinance
+yfinance
 pandas-datareader
