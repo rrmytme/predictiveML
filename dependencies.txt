@@ -1,6 +1,6 @@
 numpy
 matplotlib
+seaborn
 tensorflow
 nltk
 yfinance
-pandas-datareader

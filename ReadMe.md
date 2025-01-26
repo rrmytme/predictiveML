@@ -29,11 +29,6 @@ FinAI Assistant is a chatbot designed to assist with financial tasks such as ret
     pip install -r requirements.txt
     ```
 
-4. Install additional dependencies:
-    ```sh
-    pip install yfinance matplotlib nltk
-    ```
-
 ## Usage
 
 1. Train the model:
