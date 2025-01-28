@@ -1,6 +1,7 @@
 # Version: 1.0
 
 from fin_ai_assistant import BotAssistant
+import utils
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -11,7 +12,7 @@ import yfinance as yf
 
 # #Step1: 
 # # Load the portfolio
-# portfolio = {'AAPL': 10, 'TSLA': 5, 'AMZN': 2, 'GOOGL': 3, 'MSFT': 4}
+# portfolio = utils.createPortfolio()
 # # create a file to store the portfolio
 # with open('portfolio.pkl', 'wb') as f:
 #     pickle.dump(portfolio, f)
@@ -26,6 +27,12 @@ with open('portfolio.pkl', 'rb') as f:
 def save_portfolio(portfolio):
     with open('portfolio.pkl', 'wb') as f:
         pickle.dump(portfolio, f)
+
+def get_best_stocks():
+    top_10_stocks = utils.get_sp500_top_10_marketCap()
+    print("Top 10 S&P 500 stocks by market capitalization:")
+    for stock, market_cap in top_10_stocks:
+        print(f"{stock}: ${market_cap:,}")
 
 def stock_price():
     stock = input('which stock do you want to check: ')
@@ -105,6 +112,7 @@ def goodbye():
 
 # step4: map the methods to the chatbot
 mapping ={
+    'best_stocks': get_best_stocks,
     'stock_price': stock_price,
     'add_portfolio': add_portfolio,
     'remove_portfolio': remove_portfolio,
@@ -149,7 +157,7 @@ finbot.load_model()
 
 # step6: run the chatbot
 while True:
-    message = input('Hi!: ')
+    message = input('Hi! :')
     if message == 'exit':
         break
     finbot.get_response(message)

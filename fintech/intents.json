@@ -20,6 +20,22 @@
       "context_set": ""
     },
     {
+      "tag": "best_stocks",
+      "patterns": [
+        "What are the best stocks to buy",
+        "best stocks",
+        "stocks to buy",
+        "best stocks please",
+        "best stocks"
+      ],
+      "responses": [
+        "The best stocks to buy are",
+        "The best stocks are",
+        "The stocks to buy are"
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "plot_chart",
       "patterns": [
         "I want you to plot a stock price",
